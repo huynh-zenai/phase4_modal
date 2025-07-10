@@ -47,7 +47,9 @@ The CLI prints a URL like:
 https://txt2img-sd15--inference-web.modal.run
 ```
 
-## 5. cURL example
+Below are two ways to test this endpoint.
+
+## 4.1 cURL example
 ```bash
 curl -X POST \
      -H "Content-Type: application/json" \
@@ -56,7 +58,7 @@ curl -X POST \
 | jq -r .data | base64 -d > panda.png
 ```
 
-## 6. Python client snippet
+## 4.2 Python client snippet
 ```python3
 python3 client.py
 ```
